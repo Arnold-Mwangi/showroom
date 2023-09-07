@@ -9,32 +9,25 @@ To work on this project locally, follow these steps:
    git clone https://github.com/showroom/your-project.git
 
 2. ** Navigate to the project directory **
-      ```bash
 
+      ```bash
    cd carshowroom 
 3.Create a new branch
+   ```bash
+         git checkout -b new-branch-name
 
-      ```bash
-
- git checkout -b new-branch-name
-
-
-3. Create a virtual environment 
-        ```bash
-
+3.Create a virtual environment 
+ ```bash
    python -m venv venv
-      ```bash
-
+   
+ ```bash
   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
 4. Install all the dependencies
-   ```bash
-
-    pip install -r requirements.txt
+```bash
+ pip install -r requirements.txt
 5. apply data migrations 
-   ```bash
-
-   python manage.py makemigrations
+  ```bash
+        python manage.py makemigrations
 6. setup react frontend
    ```bash
       cd reactapp
